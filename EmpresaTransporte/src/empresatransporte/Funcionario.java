@@ -16,9 +16,17 @@ public class Funcionario {
   
     
     
-    public Funcionario(String n, double s){
-        this.nome = n;
-        this.salario = s;
-        
+    public Funcionario(String nom, int cp, int ct, String nasc, String civ, int dep, char sex, double sal, String tsal, double horas, String car){
+        this.nome = nom;
+        this.cpf = cp;
+        this.ctps = ct;
+        this.data_nascimento = nasc;
+        this.estado_civil = civ;
+        this.dependentes = dep;
+        this.sexo = sex;
+        this.salario = sal;
+        this.tipo_salario = tsal;
+        this.horas_trabalhadas = horas;
+        this.cargo = car;
     }
 }
