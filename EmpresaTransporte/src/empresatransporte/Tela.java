@@ -4,6 +4,7 @@ public class Tela extends javax.swing.JFrame {
 
     public Tela() {
         initComponents();
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -41,6 +42,11 @@ public class Tela extends javax.swing.JFrame {
         jLabel5.setText("Carga Transportada:");
 
         btExecutar.setText("Executar");
+        btExecutar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btExecutarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,6 +116,12 @@ public class Tela extends javax.swing.JFrame {
     private void txtComissaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtComissaoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtComissaoActionPerformed
+
+    private void btExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExecutarActionPerformed
+       
+        Tela2 t = new Tela2();
+        t.setVisible(true);
+    }//GEN-LAST:event_btExecutarActionPerformed
 
     public static void main(String args[]) {
 
