@@ -41,14 +41,12 @@ public class Tela extends javax.swing.JFrame {
         jLabel5.setText("Carga Transportada:");
 
         btExecutar.setText("Executar");
-<<<<<<< HEAD
-=======
+
         btExecutar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btExecutarActionPerformed(evt);
             }
         });
->>>>>>> LennonSantos/master
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
