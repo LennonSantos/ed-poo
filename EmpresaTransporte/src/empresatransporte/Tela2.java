@@ -74,7 +74,6 @@ public class Tela2 extends javax.swing.JFrame {
         pack();
     }
 
-<<<<<<< HEAD
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -82,8 +81,6 @@ public class Tela2 extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-=======
->>>>>>> origin/master
     public static void main(String args[]) {
          try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -108,8 +105,6 @@ public class Tela2 extends javax.swing.JFrame {
             }
         });
     }
-<<<<<<< HEAD
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel cargas;
     public javax.swing.JLabel comissao;
@@ -118,6 +113,4 @@ public class Tela2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     public javax.swing.JLabel tiposalario;
     // End of variables declaration//GEN-END:variables
-=======
->>>>>>> origin/master
 }
