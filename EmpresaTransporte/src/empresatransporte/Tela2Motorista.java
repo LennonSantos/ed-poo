@@ -2,9 +2,19 @@ package empresatransporte;
 
 public class Tela2Motorista extends javax.swing.JFrame {
 
+     public double htrab;
+     public String veiculo;
+     public String carga;
+    
     public Tela2Motorista() {
         initComponents();
     }
+    public void limpar(){
+        jTextField1.setText(" ");
+        jTextField2.setText(" ");
+        jTextField3.setText(" ");
+    }
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -27,6 +37,12 @@ public class Tela2Motorista extends javax.swing.JFrame {
 
         jLabel2.setText("Horas trabalhadas:");
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
         jLabel3.setText("Veículo:");
 
         jLabel4.setText("Carga transportada:");
@@ -34,8 +50,18 @@ public class Tela2Motorista extends javax.swing.JFrame {
         btSair.setText("Sair");
 
         btRegistrar.setText("Registrar");
+        btRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRegistrarActionPerformed(evt);
+            }
+        });
 
         btExecutar.setText("Executar");
+        btExecutar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btExecutarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -101,6 +127,31 @@ public class Tela2Motorista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRegistrarActionPerformed
+        htrab = Double.valueOf(jTextField1.getText());
+        veiculo = jTextField2.getText();
+        carga = jTextField3.getText();
+        limpar();
+    }//GEN-LAST:event_btRegistrarActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void btExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExecutarActionPerformed
+        /*
+        --Exemplo de código a ser utilizado--
+        Tela2 t = new Tela2();
+        t.setVisible(true);
+        
+        t.funcao.setText(funcao);
+        t.tiposalario.setText(tsalario);
+        t.horas.setText(String.valueOf(horas));
+        t.comissao.setText(String.valueOf(comissao));
+        t.cargas.setText(carga);
+        */
+    }//GEN-LAST:event_btExecutarActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

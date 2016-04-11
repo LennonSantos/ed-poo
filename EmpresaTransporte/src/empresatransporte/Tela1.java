@@ -28,6 +28,11 @@ public class Tela1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btMotorista.setText("Motorista");
+        btMotorista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btMotoristaActionPerformed(evt);
+            }
+        });
 
         btVendedor.setText("Vendedor");
 
@@ -82,6 +87,11 @@ public class Tela1 extends javax.swing.JFrame {
     private void btExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExecutarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btExecutarActionPerformed
+
+    private void btMotoristaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMotoristaActionPerformed
+        Tela2Motorista tmoto = new Tela2Motorista();
+        tmoto.setVisible(true);
+    }//GEN-LAST:event_btMotoristaActionPerformed
 
     public static void main(String args[]) {
 
