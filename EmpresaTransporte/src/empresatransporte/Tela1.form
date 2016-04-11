@@ -27,9 +27,9 @@
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="btGerenteLogistica" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btGerenteVendas" alignment="0" max="32767" attributes="0"/>
                   <Component id="btVendedor" alignment="0" max="32767" attributes="0"/>
                   <Component id="btMotorista" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btGerenteLogistica1" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="54" max="32767" attributes="0"/>
           </Group>
@@ -48,9 +48,9 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="btVendedor" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="btGerenteVendas" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
               <Component id="btGerenteLogistica" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btGerenteLogistica1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Component id="btExecutar" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="23" max="32767" attributes="0"/>
@@ -75,14 +75,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btVendedorActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btGerenteVendas">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gerente de vendas"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btGerenteVendasActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="btExecutar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Sair"/>
@@ -97,6 +89,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btGerenteLogisticaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btGerenteLogistica1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gerente de vendas"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btGerenteLogistica1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

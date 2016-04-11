@@ -1,11 +1,16 @@
 package empresatransporte;
 
+import javax.swing.JOptionPane;
+
 public class Tela2GerenteLogistica extends javax.swing.JFrame {
 
     public Tela2GerenteLogistica() {
         initComponents();
     }
-
+    
+    double salario=3000;
+    double carga;
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -21,7 +26,13 @@ public class Tela2GerenteLogistica extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         jLabel1.setText("Gerente de logistica");
 
-        jLabel2.setText("Negócios fechados");
+        jLabel2.setText("Cargas Transportadas");
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         btSair.setText("Sair");
         btSair.addActionListener(new java.awt.event.ActionListener() {
@@ -83,8 +94,15 @@ public class Tela2GerenteLogistica extends javax.swing.JFrame {
     }//GEN-LAST:event_btSairActionPerformed
 
     private void btExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExecutarActionPerformed
-        // TODO add your handling code here:
+        carga = Double.valueOf(jTextField1.getText());
+        
+        salario = salario*(1+(carga*0.10));
+        JOptionPane.showMessageDialog(null,"O salário é: "+salario);
     }//GEN-LAST:event_btExecutarActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -108,6 +126,12 @@ public class Tela2GerenteLogistica extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Tela2GerenteLogistica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

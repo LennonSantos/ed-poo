@@ -6,5 +6,5 @@ public class EmpresaTransporte {
         Tela1 t = new Tela1();
         t.setVisible(true);
     }
-    
+        
 }

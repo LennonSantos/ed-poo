@@ -1,10 +1,15 @@
 package empresatransporte;
 
+import javax.swing.JOptionPane;
+
 public class Tela2Vendedor extends javax.swing.JFrame {
 
     public Tela2Vendedor() {
         initComponents();
     }
+    
+    double salario=1500;
+    int qtdnegocios;
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -31,6 +36,11 @@ public class Tela2Vendedor extends javax.swing.JFrame {
         });
 
         btExecutar.setText("Executar");
+        btExecutar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btExecutarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,6 +86,13 @@ public class Tela2Vendedor extends javax.swing.JFrame {
     private void btSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSairActionPerformed
         dispose();
     }//GEN-LAST:event_btSairActionPerformed
+
+    private void btExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExecutarActionPerformed
+        qtdnegocios = Integer.valueOf(txtNegociosFechados.getText());
+        
+        salario = salario*(1+(qtdnegocios*0.05));
+        JOptionPane.showMessageDialog(null,"O salário é: "+salario);
+    }//GEN-LAST:event_btExecutarActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
