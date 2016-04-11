@@ -35,10 +35,20 @@ public class Tela1 extends javax.swing.JFrame {
         });
 
         btVendedor.setText("Vendedor");
+        btVendedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btVendedorActionPerformed(evt);
+            }
+        });
 
-        btGerenteVendas.setText("gerente de vendas");
+        btGerenteVendas.setText("Gerente de vendas");
+        btGerenteVendas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btGerenteVendasActionPerformed(evt);
+            }
+        });
 
-        btExecutar.setText("Executar");
+        btExecutar.setText("Sair");
         btExecutar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btExecutarActionPerformed(evt);
@@ -46,24 +56,28 @@ public class Tela1 extends javax.swing.JFrame {
         });
 
         btGerenteLogistica.setText("Gerente de logistica");
+        btGerenteLogistica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btGerenteLogisticaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btExecutar)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btGerenteLogistica)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btMotorista, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btVendedor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btGerenteVendas, javax.swing.GroupLayout.Alignment.LEADING)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btGerenteLogistica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btGerenteVendas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btVendedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btMotorista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(54, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btExecutar, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,13 +99,28 @@ public class Tela1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExecutarActionPerformed
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btExecutarActionPerformed
 
     private void btMotoristaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMotoristaActionPerformed
         Tela2Motorista tmoto = new Tela2Motorista();
         tmoto.setVisible(true);
     }//GEN-LAST:event_btMotoristaActionPerformed
+
+    private void btVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVendedorActionPerformed
+        Tela2Vendedor tvend = new Tela2Vendedor();
+        tvend.setVisible(true);
+    }//GEN-LAST:event_btVendedorActionPerformed
+
+    private void btGerenteVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGerenteVendasActionPerformed
+        Tela2GerenteVendas tgerentevend = new Tela2GerenteVendas();
+        tgerentevend.setVisible(true);
+    }//GEN-LAST:event_btGerenteVendasActionPerformed
+
+    private void btGerenteLogisticaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGerenteLogisticaActionPerformed
+        Tela2GerenteLogistica tgerentelog = new Tela2GerenteLogistica();
+        tgerentelog.setVisible(true);
+    }//GEN-LAST:event_btGerenteLogisticaActionPerformed
 
     public static void main(String args[]) {
 

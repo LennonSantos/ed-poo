@@ -23,22 +23,20 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="btExecutar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btGerenteLogistica" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="btMotorista" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btVendedor" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btGerenteVendas" alignment="0" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="btGerenteLogistica" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btGerenteVendas" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btVendedor" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btMotorista" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="54" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btExecutar" min="-2" pref="97" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,15 +71,21 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Vendedor"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btVendedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btGerenteVendas">
       <Properties>
-        <Property name="text" type="java.lang.String" value="gerente de vendas"/>
+        <Property name="text" type="java.lang.String" value="Gerente de vendas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btGerenteVendasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btExecutar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Executar"/>
+        <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btExecutarActionPerformed"/>
@@ -91,6 +95,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Gerente de logistica"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btGerenteLogisticaActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
