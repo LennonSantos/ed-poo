@@ -3,7 +3,7 @@ package empresatransporte;
 public class EmpresaTransporte {
 
     public static void main(String[] args) {
-        Tela t = new Tela();
+        Tela1 t = new Tela1();
         t.setVisible(true);
     }
     
